@@ -1,0 +1,45 @@
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.section-button {
+    display: block;
+    width: 100%;
+    outline: unset;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    text-align: left;
+    font-size: 1rem;
+    text-transform: capitalize;
+    margin: 10px 0 0;
+}
+
+.content {
+    /* display: none;   */
+    height: 0;
+    -webkit-transition: height 1s ease;
+    transition: height 0.5s ease;
+    background-color: aquamarine;
+    overflow: hidden;
+}
+
+.content.active {
+    /* display: block; */
+    height: 200px;
+}
+
+.inner {
+    margin: 16px;
+}
+.icon {
+    transform: rotate(90deg);
+    -webkit-transition: transform 1s ease;
+    transition: transform 0.5s ease;
+    float: right;
+}
+
+.icon.active {
+    transform: rotate(270deg);   
+}
