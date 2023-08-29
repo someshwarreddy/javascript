@@ -2,21 +2,24 @@
 
 // var is global scoped 
 var vd;
+
 vd = 100;
 console.log(`var ${vd}`);
 // answer is 100
 
 va = 10;
 console.log(`var ${va}`);
-// answear is 10 because varible value not depended on the where you declare the varible its depend where you value intilized and the global excution phase 
-
-// js engine creates  value as undefined first then assigns value in excution phase
 var va;
+
+//answer is 10 because the variable value does not depend on where you declare the variable value; it depends on where the value is initialized and the global execution phase .
+
+// js engine creates  value as undefined first then assigns value in the execution phase
 
 console.log(`var ${a}`);
 var a;
-// undefined value because of hoisting memory creation 
 a = 100;
+
+// undefined value because of hoisting memory creation 
 
 // let is block scoped 
 let ld;
@@ -25,7 +28,7 @@ console.log(`let ${ld}`)
 
 //let ld ; // throws error because let block scoped
 ld = 1000;
-console.log(`let ${ld}`) // let also allows reassin a value to the  declared varible which has same name
+console.log(`let ${ld}`) // let also allow reassigning a value to the  declared variable which has the same name
 
 la = 10;
 console.log(`let ${la}`);

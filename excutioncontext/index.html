@@ -1,12 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>excution</title>
 </head>
+
 <body>
+    <ul>
+        <li>var a =10; var Execution context</li>
+
+        <li>
+            Global Execution Context
+            Phase: Creation
+            window: global object
+            this: window
+            a: undefined
+        </li>
+        <li>
+            Current Operation: VariableDeclaration
+        </li>
+        <li>
+            Global Execution Context
+            Phase: Execution
+            window: global object
+            this: window
+            a: undefined
+        </li>
+        <li>
+            Current Operation: Literal
+        </li>
+        <li>
+            Global Execution Context
+            Phase: Execution
+            window: global object
+            this: window
+            a: undefined
+        </li>
+       
+        <li>Current Operation: Program</li>
+        <li>
+            Global Execution Context
+            Phase: Execution
+            window: global object
+            this: window
+            a: 10
+        </li>
+    </ul>
+
+    <ul>
+        <li>let a =10; let Execution context</li>
+        <li>Current Operation: ExpressionStatement</li>
+        <li>Current Operation: Identifier</li>
+        <li>Current Operation: ExpressionStatement</li>
+    </ul>
     <script src="excution.js"></script>
 </body>
+
 </html>
