@@ -11,16 +11,28 @@ function b() {
 a(b)
 
 // callback hell
-
-function one(callbackhell) {
-    callbackhell()
+function one (callbackone) {
+    callbackone(1)
 }
-one(two)
 
-function two() {
-    function three() {
-        console.log('callbackhell')
-    }
-    three()
+function two (callbacktwo) {
+    callbacktwo(2)
+} 
+
+function three (callbackthree) {
+    callbackthree(3)
 }
+
+function makeSomthing() {
+    one(()=>{
+        two(()=>{
+            three(()=>{
+                console.log('callbackhell')
+            })
+        })
+    })
+}
+
+makeSomthing()
+
 
