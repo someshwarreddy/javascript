@@ -1,0 +1,2 @@
+// Every JavaScript Function is a Pull system. The function is a Producer of data, and the code that calls the function is consuming it by "pulling" out a single return value from its call.
+// This happens because both functions and Observables are lazy computations.
