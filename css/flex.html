@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .flex-conatiner {
+            display: flex;
+            /* justify-content: center; */
+            background-color: rgb(255, 0, 43);
+            min-height: 300px;
+            flex-wrap: wrap;
+            align-items: center;
+            flex-direction: row;
+            align-content: flex-end;
+            gap: 1rem;
+        }
+
+        .flex-child {
+            width:200px;
+            height: 100px;
+            border: 1px solid rgb(13, 101, 208);
+            background-color: aquamarine;
+
+        }
+
+        .flex-child:first-child {
+            align-self: flex-end;
+            /* justify-self: end; */
+            /* order: 3; */
+        }
+
+        .flex-child:last-child {
+            align-self: flex-end;
+            background-color: rgb(136, 143, 141);
+            /* order: -1; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-conatiner">
+        <div class="flex-child">1</div>
+        <div class="flex-child">2</div>
+        <div class="flex-child">3</div>
+        <div class="flex-child">4</div>
+        <div class="flex-child">5</div>
+        <div class="flex-child">6</div>
+        <div class="flex-child">7</div>
+        <div class="flex-child">8</div>
+        <div class="flex-child">9</div>
+        <div class="flex-child">10</div>
+        <div class="flex-child">11</div>
+        <div class="flex-child">12</div>
+    </div>
+</body>
+
+</html>

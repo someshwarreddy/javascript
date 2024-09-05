@@ -9,4 +9,13 @@ btns.forEach((btn, index) => {
         contentIcon[index].classList.add('active');
 
     })
-})
+});
+
+for(var i=0; i<5; i++){
+    var btn = document.createElement('button');
+    btn.appendChild(document.createTextNode('button'+i));
+    btn.addEventListener('click',function(){
+      console.log(i)  
+    })
+    document.body.appendChild(btn)
+}

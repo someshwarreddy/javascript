@@ -70,3 +70,18 @@ function constScope() {
 }
 constScope()
 
+var a ='ssscdddrrrwbb'
+function str(strng){
+     let charCount={};
+     
+    
+    for(let char of strng){
+         
+        charCount[char]= (charCount[char]|| 0)+1;
+        
+    }
+    let singleChar = Object.keys(charCount).filter(char=> charCount[char]===1)
+    return singleChar
+}
+console.log(str(a));
+
